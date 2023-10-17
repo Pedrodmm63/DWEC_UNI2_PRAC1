@@ -4,6 +4,10 @@ function generaAleatorio(min, max) {
 }
 
 function generaNAleatorios(cantidad, min, max){
-
+    var numerosAleatorios = [];
+    for (let i = 0; i < cantidad; i++) {
+        numerosAleatorios.push(generaAleatorio(min, max));
+    }
+    return numerosAleatorios;
     
 }
